@@ -1,13 +1,13 @@
 #there two type of Recursions Tail and head
 
-def self.head n
+def head n
   if n > 0
     p "head recursions #{n}"
     head n - 1
   end
 end
 
-def self.tail n
+def tail n
   if n > 0
     tail n - 1
     p "tail recursions #{n}"
